@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TrangChuAdmin.master.cs" Inherits="WebOnline.qlyAdmin.TrangChuAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     
+     <div class="menu">
+     <a href="QLyTaiKhoan1.aspx">Quản Lý Tài Khoản</a>
+     <a href="QlySanPham.aspx" ">Quản Lý Sản Phẩm</a>
+         <a href="QLyDonHang.aspx" style=" margin-right: 500px;">Quản Lý Đơn Hàng</a>
+    Xin Chào : Admin |
+     <a href="AdminLogin.aspx">Đăng Xuất</a>
+ 
+ </div>
+
+         <h1 class="fixed" style="margin-left:40%; color:red">Quản Lý Trang Web</h1>
+ <div class="container">
+<div class="rightDiv" style="
+    width: 100%;
+"> 
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      </div>
+     </div>
+    </form>
+      <footer class="footer-container">
+    <div>
+        Địa Chỉ: 03 Quang Trung - TP.Đà Nẵng<br />
+        Điện Thoại: (+84)236.36504403
+    </div>
+          </footer>
+</body>
+</html>

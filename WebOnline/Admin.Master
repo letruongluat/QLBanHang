@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WebOnline.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     
+     <div class="menu">
+     <a href="default.aspx">Trang Chủ</a>
+     <a href="SanPham.aspx"> Sản Phẩm</a>
+     <a href="#">Thông Báo</a>
+          <input class="kc1" type="text">
+     <button  style=" margin-right: 230px;">Tìm kiếm</button>
+     <a href="DangKy.aspx">Đăng Ký</a>|
+     <a href="DangNhap.aspx">Đăng Nhập</a>
+ 
+ </div>
+ <div class="image-row">
+  <img src="./anh/a.png" alt="" width="100%" height="200px">
+ </div>
+         <h2 class="fixed">Danh Mục Sản Phẩm</h2>
+ <div class="container">
+    <div class="leftDiv" style="width:20%; float:left;"> 
+    <ul style="width:200%; float:left;">
+            <li class="flexx"><a href="SanPham.aspx?MaLoai=2" previewlistener="true">Áo Thể Thao</a></li>
+            <li class="flexx"><a href="SanPham.aspx?MaLoai=1">Quần Jean</a></li>
+            <li class="flexx"><a href="SanPham.aspx?MaLoai=3">BaLo</a></li>
+        </ul>
+    </div>
+<div class="rightDiv"> 
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      </div>
+     </div>
+    </form>
+      <footer class="footer-container">
+    <div>
+        Địa Chỉ: 03 Quang Trung - TP.Đà Nẵng<br />
+        Điện Thoại: (+84)236.36504403
+    </div>
+          </footer>
+</body>
+</html>
